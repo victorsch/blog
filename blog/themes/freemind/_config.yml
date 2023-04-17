@@ -19,8 +19,8 @@ menu:
     # icon: "fa fa-user"
 
 links:
-  - title: hexo-theme-bithack
-    url: https://github.com/Ares-X/hexo-theme-freemind.bithack
+  - title: github
+    url: https://github.com/victorsch
     intro: ""
     icon: false
 
