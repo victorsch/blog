@@ -1,7 +1,7 @@
 ---
 title: Jersey CTF III - avenge-my-password
 date: 2023-04-17 10:03:43
-tags:
+tags: writeups
 ---
 
 ```
