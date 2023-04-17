@@ -1,7 +1,7 @@
 ---
 title: Jersey CTF III - xss-terminator
 date: 2023-04-17 09:55:30
-tags:
+tags: writeups
 ---
 
 ```
