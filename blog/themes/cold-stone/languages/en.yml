@@ -1,0 +1,34 @@
+title: victorsch
+
+nav:
+  home: HOME
+  tags: TAGS
+  about: ABOUT
+  projects: PROJECTS
+  friends: FRIENDS
+  archives: ARCHIVES
+  categories: CATEGORIES
+  cool_sites: COOL SITES
+
+post:
+  postTime: Post
+  updateTime: Last Update
+  tags: Tags
+  more: Read more
+  wordCount: Word Count
+  readingTime: Reading Time
+  notMore: Not More
+  readed: Read Count
+
+search: Search
+
+page:
+  previous: previous
+  next: next
+
+blog:
+  totalpost: Total
+  wordcount: Blog Word Count
+  visitcount: Blog Visit Count
+
+back: Back

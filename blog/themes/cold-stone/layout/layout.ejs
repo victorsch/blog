@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="<%- config.language %>">
+  <%- partial('_partial/head') %>
+  <body>
+    <% if (config.author && is_home()) { %>
+      <%- partial('_partial/prelude', null, {cache: false}) %>
+    <% } %>
+
+    <%- partial('_partial/header', null, {cache: false}) %>
+
+    <main class="main wrapper"><%- body %></main>
+
+    <% if (!is_post()) { %>
+      <%- partial('_partial/footer', null, {cache: false}) %>
+    <% } %>
+
+    <%- partial('_partial/script', null, {cache: false}) %>
+  </body>
+</html>

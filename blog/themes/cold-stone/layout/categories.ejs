@@ -1,0 +1,18 @@
+<!-- 分类列表 -->
+<ul class="list-unstyled animate-list">
+  <% site.categories.map(function(category){  %>
+    <li class="card slide-in-right">
+        <h2 class="category-name" id="<%= category.name %>"><%= category.name %>&nbsp;<small><%= category.posts.length %></small></h2>
+        <% category.posts.map(function(post){  %>
+            <a class="tag-post-title" href="<%- config.root %><%- post.path %>">
+                <p class="hover-underline-animation">
+                    <%-_ (post.title || "Untitled").replace(/[<>&"]/g,function(c){
+                        return {'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c];
+                    }) _%>
+                </p>
+            </a>
+        <% }) %>
+    </li>
+  <% }) %>
+</ul>
+

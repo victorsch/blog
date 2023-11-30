@@ -1,0 +1,43 @@
+<article class="article slide-in-right uk-article">
+  <section class="article-header">
+    <h1 class="article-title uk-article-title">
+      <%- trim(page.title.replace(/[<>&"]/g, function(c){
+        return {'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c];
+      })) %>
+    </h1>
+    <p class="article-meta uk-article-meta">
+      <span class="meta-info">
+        <span>
+          <%= __('post.updateTime') %>&#58;<time class="post-time"
+            datetime="<%= page.updated.format(config.date_format) %>"><%= page.updated.format(config.date_format) %></time>
+        </span>
+        <span><%= __('post.readingTime') %>&#58; <%= min2read(page.more) %> min</span>
+        <span class="hide" id="busuanzi_container_page_pv"><%= __('post.readed') %>&#58; <span
+            id="busuanzi_value_page_pv"></span></span>
+      </span>
+    </p>
+  </section>
+  <section class="article-content"><%- page.content %></section>
+</article>
+
+<%- partial('_partial/prev_next', null, {cache: false}) %>
+
+<!-- <section class="article-toc">
+  <div class="card uk-margin-remove-bottom">
+    <%- toc(page.more, {list_number	: false }) %>
+  </div>
+</section> -->
+
+<section class="article slide-in-right">
+  <div class="loader" id="loader">
+    <svg viewBox="0 0 50 50">
+      <circle class="ring" cx="25" cy="25" r="20"></circle>
+      <circle class="ball" cx="25" cy="5" r="3.5"></circle>
+    </svg>
+  </div>
+
+  <div class="comment" id="utteranc"></div>
+  <noscript>Please activate JavaScript for normal use of comments</noscript>
+</section>
+
+<a class="card back-to-top" id="backTop">&UpArrow;</a>

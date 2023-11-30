@@ -1,0 +1,22 @@
+# Minifier Site Source
+all_minifier: true
+
+language: en
+
+seo_title: victorsch
+avatar: fav2.png
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+projects_dir: projects
+cool_sites_dir: Cool-Sites
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Utteranc comment system
+comment:
+  repo: victorsch/blog-comments
