@@ -779,6 +779,10 @@ blockquote {
   overflow: auto;
 }
 
+.gutter {
+  display: none;
+}
+
 code {
   word-wrap: normal;
   word-break: keep-all;
