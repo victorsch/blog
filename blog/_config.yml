@@ -3,13 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: vic
+title: victorsch
+seo_title: victorsch
 subtitle: ''
 description: ''
 keywords:
 author: Victor Schiavo
 language: en
 timezone: ''
+
+avatar: fav2.png
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -25,8 +28,9 @@ source_dir: source
 public_dir: public
 tag_dir: tags
 archive_dir: archives
-category_dir: categories
 code_dir: downloads/code
+projects_dir: projects
+cool_sites_dir: Cool-Sites
 i18n_dir: :lang
 skip_render:
 
@@ -101,7 +105,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: freemind
+theme: cold-stone #freemind
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
